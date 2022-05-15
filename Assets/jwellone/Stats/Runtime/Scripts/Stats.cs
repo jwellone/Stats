@@ -228,10 +228,13 @@ namespace jwellone.Debug
 
 		void Update()
 		{
-			if (!_root.gameObject.activeSelf)
+			if(_layout == Layout.None)
 			{
+				_root.gameObject.SetActive(false);
 				return;
 			}
+
+			_root.gameObject.SetActive(true);
 
 			FrameTimingManager.CaptureFrameTimings();
 			var num = FrameTimingManager.GetLatestTimings((uint)_frameTimings.Length, _frameTimings);
