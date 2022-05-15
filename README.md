@@ -7,7 +7,7 @@
 
 
 # Stats
-Can display Statistics and Memory information at runtime.
+Displays Statistics and Memory information during runtime.
 
 This feature is one of the "j1Tech" developed by jwellone Inc for Unity.
 
